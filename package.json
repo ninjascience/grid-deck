@@ -1,0 +1,15 @@
+{
+  "name": "marin",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "grunt-contrib-jasmine": "latest",
+    "grunt": "~0.4.0a",
+    "grunt-contrib-jshint": "0.1.0",
+    "grunt-contrib-watch": "~0.1.4",
+    "grunt-contrib-connect": "0.1.0"
+  }
+}
