@@ -5,3 +5,6 @@ progress/
 *.ipr
 *.iws
 node_modules
+component.json
+components
+js/src
