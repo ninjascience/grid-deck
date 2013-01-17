@@ -1,0 +1,36 @@
+<ul class="facets">
+    {{#each this.facets }}
+    <li class="facet_item">
+        <span class="facet_label">{{name}}</span>
+        <ul class="value_list {{type}}_list">
+            {{#each this.values}}
+            <li class="{{../type}}_item value_item">
+                <div style="width:{{width}}%;" class="facet_width"></div>
+                <span class="{{../type}}_label facet_value_label">
+                    <i class="icon-{{../type}}"></i>
+                    <a href="#"  class="facet_value_link {{#if this.selected}}selected{{/if}}"  data-facetType="{{this.type}}" data-facetValue="{{this.name}}">{{this.name}}</a>
+                    <span class="facet_count pull-right">{{this.count}}</span>
+                </span>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+    {{/each}}
+
+    {{#each this.dimensions }}
+    <li class="facet_item">
+        <span class="facet_label">{{this.name}}</span>
+        <ul class="value_list dimension_list">
+            {{#each children}}
+            <li class="dimension_item">
+                <span class="dimension_label">
+                    <i class="icon-tag"></i>
+                    <a href="#" class="facet_value_link" data-facetType="dim.{{../name}}" data-facetValue="{{this.name}}">{{this.name}}</a>
+                    <span class="facet_count pull-right">{{this.count}}</span>
+                </span>
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+    {{/each}}
+</ul>

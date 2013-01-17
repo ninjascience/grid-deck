@@ -1,0 +1,72 @@
+<div id="e">⌘e</div>
+<div id="left" style="width: 400px;">
+    <div class="facets"></div>
+</div>
+<div id="right" style="left: 400px;">
+    <div id="form">
+        <button id="advanced-button" class="btn h" style=""><i class="icon-wrench"></i></button>
+        <input id="q" type="text" placeholder="Search as you type" autofocus="" param="q" class="search-q">
+
+        <div id="advanced"><span class="btn-group"><button data-toggle="dropdown" class="btn dropdown-toggle"><i
+                class="icon-calendar"></i></button><ul class="dropdown-menu">
+            <li><a href="#" v="today" class="days-apply">Today</a></li>
+            <li><a href="#" v="yesterday" class="days-apply">Yesterday</a></li>
+            <li><a href="#" v="week" class="days-apply">Week ending today</a></li>
+            <li class="divider"></li>
+            <li><a href="#" v="null" class="days-apply"><em>None</em></a></li>
+        </ul></span></div>
+    </div>
+    <div id="grid">
+        <table class="table-condensed">
+            <thead>
+            <tr></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div id="total">0</div>
+    <div id="paging"><span class="msg"></span><i id="refresh" class="icon-refresh"></i><i id="previous"
+                                                                                          class="icon-backward"></i><i
+            id="next" class="icon-forward"></i></div>
+</div>
+<div id="detail" style="opacity: 0; display: none;"><i class="esc">esc</i>
+
+    <div class="toolbar">
+        <button class="btn"><i class="icon-star"></i></button>
+        <button class="btn"><i class="icon-signal"></i></button>
+        <button class="btn"><i class="icon-trash"></i></button>
+        <button class="btn"><i class="icon-home"></i></button>
+        <button class="btn"><i class="icon-download"></i></button>
+        <button class="btn"><i class="icon-headphones"></i></button>
+    </div>
+</div>
+<div id="eng"><span class="btn-group"><a data-toggle="dropdown" href="#" class="btn dropdown-toggle">Native sort</a><ul
+        class="dropdown-menu">
+    <li><a href="#" col="score" class="native-sort-apply">Score</a></li>
+    <li class="divider"></li>
+    <li><a href="#" col="id" class="native-sort-apply">ID</a></li>
+    <li><a href="#" col="title" class="native-sort-apply">Title</a></li>
+    <li><a href="#" col="groupName" class="native-sort-apply">Group</a></li>
+    <li><a href="#" col="campaignName" class="native-sort-apply">Campaign</a></li>
+    <li><a href="#" col="revenue" class="native-sort-apply">Revenue</a></li>
+    <li><a href="#" col="conversions" class="native-sort-apply">Conversions</a></li>
+    <li class="divider"></li>
+    <li><a href="#" col="null" class="native-sort-apply"><em>None</em></a></li>
+</ul></span><span class="btn-group"><a data-toggle="dropdown" href="#" class="btn dropdown-toggle">Local sort</a><ul
+        class="dropdown-menu">
+    <li><a href="#" col="id" class="local-sort-apply">ID</a></li>
+    <li><a href="#" col="title" class="local-sort-apply">Title</a></li>
+    <li><a href="#" col="groupName" class="local-sort-apply">Group</a></li>
+    <li><a href="#" col="campaignName" class="local-sort-apply">Campaign</a></li>
+    <li><a href="#" col="revenue" class="local-sort-apply">Revenue</a></li>
+    <li><a href="#" col="conversions" class="local-sort-apply">Conversions</a></li>
+    <li class="divider"></li>
+    <li><a href="#" col="null" class="local-sort-apply"><em>None</em></a></li>
+</ul></span>
+    <button id="load-all" class="btn btn-success">Load all</button>
+    <div id="progress" class="progress">
+        <div class="bar" style="width: 0%;"></div>
+    </div>
+    <div id="stats"></div>
+    <div id="query"></div>
+</div>

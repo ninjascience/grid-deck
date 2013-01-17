@@ -1,0 +1,228 @@
+body {
+    overflow: hidden;
+}
+
+#dripTest {
+    font-size: .7em;
+}
+
+#e {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-style: italic;
+    color: rgba(0,0,0,.3);
+    cursor: pointer;
+}
+
+#left {
+    position: absolute;
+    border: 0;
+    left: 0;
+    top: 50px;
+    width: 380px;
+    bottom: 30px;
+}
+
+.facets {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.facet, .facet div {
+    display: inline;
+    padding-left: 5px;
+}
+
+.facets a {
+    color: rgba(100, 100, 100, 1.00);
+}
+
+.facets div {
+    /*background-color: rgba(0, 0, 0, 0.03);*/
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+#right {
+    position: absolute;
+    border: 0;
+    right: 0;
+    top: 60px;
+    left: 400px;
+    bottom: 0;
+}
+
+#detail {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 980px;
+    bottom: 20px;
+    background-color: rgb(230,230,230);
+    box-shadow: 5px 5px 20px 5px rgba(0,0,0,.5);
+    padding: 5px;
+    display: none;
+}
+
+.esc {
+    font-size: small;
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    color: rgba(0,0,0,.1);
+}
+
+.esc:hover {
+    color: rgba(0,0,0,.6);
+}
+
+#detail .toolbar {
+    position: absolute;
+    right: 20px;
+    width: 40px;
+    top: 15px;
+}
+
+#right #form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    white-space: nowrap;
+}
+
+#right #form #advanced-button {
+    margin-bottom: 9px;
+    margin-right: 5px;
+}
+
+#right #form #q {
+    width: 100%;
+}
+
+#right #advanced {
+    display: none;
+    height: 200px;
+}
+
+#right #grid {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    left: 0;
+    bottom: 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#right #grid table {
+    width: 100%;
+}
+
+#right #grid table thead tr {
+    font-size: small;
+    color: rgb(190,190,190);
+}
+
+#right table .kw {
+    width: 100%;
+}
+
+#right table td {
+    padding-right: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#right table tr.sel {
+
+}
+
+#right table tr.sel td {
+    background-color: rgb(170,170,170);
+    color: rgb(240,240,240);
+}
+
+#right table tbody tr:hover {
+    text-decoration: underline;
+}
+
+#right #total {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    color: rgb(110,110,110);
+    font-size: smaller;
+}
+
+#right #paging {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+#right #paging span {
+    padding-right: 5px;
+    color: rgb(110,110,110);
+    font-size: smaller;
+}
+
+#right #paging i {
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+#refresh {
+    cursor: pointer;
+}
+
+#grid {
+    position: absolute;
+    top: 120px;
+    left: 215px;
+    bottom: 15px;
+    right: 5px;
+    overflow: auto;
+}
+
+#grid table td {
+    padding-right: 10px;
+}
+
+#eng {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(77, 57, 4, 0.80);
+    color: rgb(240, 237, 192);
+    padding: 10px;
+    box-shadow: 5px 5px 20px 5px rgba(0,0,0,.5);
+    display: none;
+}
+
+#stats, #query {
+    font-size: 8pt;
+    line-height: 7pt;
+    font-family: monospace;
+    white-space: pre;
+}
+
+#query {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dotted rgb(240, 237, 192);
+}
+
+#eng input, #eng button, #eng span.btn-group {
+    display: block;
+    margin: 5px 0 5px 0;
+}

@@ -1,0 +1,27 @@
+<div id="viewBuilder">
+    <h1>View Builder</h1>
+    <table id="columnTable">
+        <tr>
+            <th class="checkboxHeader"></th>
+            <th class="nameHeader">Column</th>
+            <th class="formatHeader">Format</th>
+            <th class="sourceHeader">Source</th>
+        </tr>
+        {{#each this._columns }}
+        <tr>
+            <td class="checkboxCell"><input type="checkbox" class="selectedCheckbox" data-columnId="{{id}}" {{#if selected }}checked="checked"{{/if}} /></td>
+            <td class="nameCell">{{name}}</td>
+            <td class="formatCell">{{format}}</td>
+            <td class="sourceCell">{{source}}</td>
+        </tr>
+        {{/each}}
+    </table>
+    {{#unless this._liveChanges }}
+
+        <span class="button_controls pull-right">
+            <button id="cancelButton" type="button" class="btn">Cancel</button>
+            <button id="okayButton" type="submit" class="btn btn-primary">Okay</button>
+        </span>
+
+    {{/unless}}
+</div>

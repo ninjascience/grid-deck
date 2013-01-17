@@ -2,18 +2,21 @@ require.config({
     locale: 'en_US',
     paths: {
         lib: 'js/lib',
+        controllers: 'js/src/controllers',
         'jquery.event.drag': 'js/lib/jquery/jquery.event.drag-2.2',
         'jquery.dotimeout': 'js/lib/jquery/jquery-dotimeout/jquery.ba-dotimeout',
         'jquery.ui': 'js/lib/jquery/jquery-ui-1.9.0.custom',
         hbs: 'js/lib/hbs',
         'Handlebars': 'js/lib/Handlebars',
-        underscore: 'js/lib/hbs/underscore',
+        underscore: 'js/lib/underscore',
         i18nprecompile: 'js/lib/hbs/i18nprecompile',
         json2: 'js/lib/hbs/json2',
-        deck: 'core/deck.core'
+        deck: 'core/deck.core',
+        bootstrap: 'components/bootstrap/js/bootstrap'
         // And so on for other frameworks/utils
     },
     shim: {
+        'bootstrap': ['jquery'],
         'underscore': {exports: '_'},
         'jquery.event.drag': ['jquery'],
         'lib/slickgrid/slick.grid': ['jquery.event.drag'],
@@ -38,6 +41,7 @@ define(
     'core',
     [
         'jquery',
+        'bootstrap',
         'js/src/QueryString',
         'deck',
         'extensions/hash/deck.hash.js',
